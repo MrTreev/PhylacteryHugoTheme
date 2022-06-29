@@ -1,0 +1,94 @@
+:root {
+    --hacker: #AA66FF;
+    --mostly: #7144AA;
+    --slightly: #392255;
+    --backgroundcolour: #000000;
+    --backgroundcolour2: #0A000F;
+}
+
+#links img,footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
+    max-height: 1em;
+    max-width: 1em;
+}
+
+html {
+	background:var(--backgroundcolour);
+	color:var(--hacker);
+	padding-bottom:500px;
+}
+
+body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    color: var(--mostly);
+    background: inherit;
+}
+
+h1 {
+	color:var(--hacker);
+	text-align: center;
+    	text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+}
+h2, h3, h4, h5, h6 {
+	color:var(--hacker);
+    	text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
+
+}
+
+.menubar li a {
+	display: block;
+}
+
+.menubar a {
+	text-decoration:none;
+	color:var(--mostly);
+}
+
+.menubar {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	zoom:1;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: larger;
+	text-align: center;
+}
+.menubar li {
+	display: block;
+	float: left;
+	width: 100px;
+	min-height: 1.5em;
+	background: var(--backgroundcolour2);
+	border: var(--slightly) solid 2px;
+	padding: 3px;
+	margin: 4px;
+}
+
+.menubar li:hover {
+	background: var(--slightly);
+}
+
+.menubar li ul {
+	visibility: hidden;
+	position: absolute;
+	padding-top: 10px;
+}
+
+.menubar li:hover ul {
+	visibility: visible;
+	padding-left: 0;
+	margin-left: -7px;
+}
+
+.menubar li ul li {
+	float: none;
+	position: relative;
+	width: 150px;
+	text-align: left;
+}
