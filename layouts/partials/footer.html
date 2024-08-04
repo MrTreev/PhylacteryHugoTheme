@@ -4,5 +4,4 @@
 	<title>{{ with .Title }}{{ if ne . ($.Scratch.Get "title") }}{{ . }} &middot; {{ end }}{{ end }}@{{ .Site.Author.handle }}’s {{ .Site.Title }}</title>
 	<link rel='stylesheet' type='text/css' href='{{.Site.BaseURL}}css/style.css'>
 	<meta charset="utf-8"/>
-	{{ end }}
 </head>

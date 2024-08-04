@@ -1,0 +1,17 @@
+{{ define "title" }}
+  {{ .Title }}
+{{ end }}
+{{ define "main" }}
+    {{ with .Params.tags }}
+      {{ range . }}
+        <div>
+        <h1>{{ . }}</h1>
+        <ul>
+        {{ range .Pages }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+        <div>
+      {{ end }}
+    {{ end }}
+{{ end }}

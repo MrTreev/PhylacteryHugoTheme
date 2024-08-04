@@ -1,8 +1,20 @@
-<html lang="en">
-<head>
-    {{ hugo.Generator }}
-	<title>{{ with .Title }}{{ if ne . ($.Scratch.Get "title") }}{{ . }} &middot; {{ end }}{{ end }}@{{ .Site.Author.handle }}’s {{ .Site.Title }}</title>
-	<link rel='stylesheet' type='text/css' href='{{.Site.BaseURL}}css/style.css'>
-	<meta charset="utf-8"/>
-	{{ end }}
-</head>
+<nav>
+<ul class="menubar">
+
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+		{{ if .HasChildren }}
+			<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}{{ .Name }}</a>
+			<ul>
+				{{ range .Children }}
+					<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+		{{ else }}
+			<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}{{ .Name }}</a>
+		{{ end }}
+		</li>
+    {{ end }}
+
+</ul>
+</nav>

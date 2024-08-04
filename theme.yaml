@@ -1,0 +1,8 @@
+name: phylactery
+license: GPLv3
+licenselink: https://github.com/MrTreev/PhylacteryHugoTheme/blob/master/LICENSE
+description: Theme for my personal website
+min_version: 0.59.1
+author:
+  name: Oliver Patterson
+  homepage: https://oliverpatterson.xyz
