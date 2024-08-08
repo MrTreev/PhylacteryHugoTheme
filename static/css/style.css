@@ -1,9 +1,30 @@
 :root {
-    --hacker: #AA66FF;
-    --mostly: #7144AA;
-    --slightly: #392255;
-	--background: #000000;
-	--background2: #0A000F;
+	--rosewater: #f5e0dc;
+	--flamingo: #f2cdcd;
+	--pink: #f5c2e7;
+	--mauve: #cba6f7;
+	--red: #f38ba8;
+	--maroon: #eba0ac;
+	--peach: #fab387;
+	--yellow: #f9e2af;
+	--green: #a6e3a1;
+	--teal: #94e2d5;
+	--sky: #89dceb;
+	--sapphire: #74c7ec;
+	--blue: #89b4fa;
+	--lavender: #b4befe;
+	--text: #cdd6f4;
+	--subtext1: #bac2de;
+	--subtext0: #a6adc8;
+	--overlay2: #9399b2;
+	--overlay1: #7f849c;
+	--overlay0: #6c7086;
+	--surface2: #585b70;
+	--surface1: #45475a;
+	--surface0: #313244;
+	--base: #1e1e2e;
+	--mantle: #181825;
+	--crust: #11111b;
 }
 
 #links img, footer img, li img, h1 img, h2 img, h3 img, p img, .dropme img {
@@ -12,9 +33,9 @@
 }
 
 html {
-	color:var(--hacker);
+	color:var(--text);
 	padding-bottom:500px;
-	background:var(--background);
+	background:var(--base);
 }
 
 body {
@@ -22,21 +43,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    color: var(--mostly);
+    color: var(--subtext1);
 }
 
 h1 {
-	color:var(--hacker);
+	color:var(--text);
 	text-align: center;
-    	text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
 }
 h2, h3, h4, h5, h6 {
-	color:var(--hacker);
-    	text-shadow: -1px 3px 3px rgba(0, 0, 0, 0.68);
-
+	color:var(--text);
+}
+a {
+	color:var(--lavender);
 }
 
 nav {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: larger;
+	text-align: center;
+}
+
+blockquote {
+	background: var(--base);
 	margin-left: auto;
 	margin-right: auto;
 	font-size: larger;
@@ -55,7 +84,7 @@ nav {
 
 .menubar a {
 	text-decoration:none;
-	color:var(--mostly);
+	color:var(--subtext1);
 }
 
 .menubar {
@@ -70,14 +99,14 @@ nav {
 	float: left;
 	width: 100px;
 	min-height: 1.5em;
-	background: var(--background2);
-	border: var(--slightly) solid 2px;
+	background: var(--base);
+	border: var(--mauve) solid 2px;
 	padding: 3px;
 	margin: 4px;
 }
 
 .menubar li:hover {
-	background: var(--slightly);
+	background: var(--overlay2);
 }
 
 .menubar li ul {
@@ -97,22 +126,4 @@ nav {
 	position: relative;
 	width: 150px;
 	text-align: left;
-}
-
-#nextprev {
-	/* The container for both the previous and next articles. */
-}
-
-#prevart {
-	float: left ;
-	text-align: left ;
-}
-
-#nextart {
-	float: right ;
-	text-align: right ;
-}
-
-#nextart,#prevart {
-	max-width: 33% ;
 }
